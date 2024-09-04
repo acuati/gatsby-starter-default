@@ -1,0 +1,11 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logotipo{
+    border: black solid 3px;
+    border-radius: 6px;
+    box-shadow: 12px 12px 24px pink;
+}

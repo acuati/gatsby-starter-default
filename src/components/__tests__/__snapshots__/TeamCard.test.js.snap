@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeamCard renderizamos bien el componente 1`] = `
+<div
+  class="card-team"
+  data-testid="card-team"
+>
+  <img
+    alt="Sample Title"
+    class="card-image"
+    src="https://via.placeholder.com/150"
+  />
+  <h2
+    class="card-title"
+  >
+    Sample Title
+  </h2>
+  <h2
+    class="card-role"
+  >
+    jefe de equipo
+  </h2>
+  <p
+    class="card-description"
+  >
+    me gustan las habichuelas
+  </p>
+</div>
+`;
