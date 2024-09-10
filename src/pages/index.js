@@ -4,12 +4,18 @@ import Greeting from "../components/Greeting"
 import StatusMessage from "../components/statusMessage/StatusMessage"
 import UserCard from "../components/userCard/UserCard"
 import TeamCard from "../components/teamcard/teamcard"
-const IndexPage = () => {
+import { graphql } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
+const IndexPage = ({data}) => {
   return(
     <>
     <Layout>
-      <div className='container-team-card'>
-     <TeamCard
+
+       {/* <div className='container-team-card'> */}
+
+
+
+     {/* <TeamCard
       imageSrc="https://via.placeholder.com/150"
       title="Alberto Alcocer"
       role="Jefe de equipo"
@@ -70,8 +76,21 @@ const IndexPage = () => {
 
 
 
-     </TeamCard>
-     </div>
+     </TeamCard> */}
+     {/* </div> */}
+
+      <ul>
+        {
+          data.allFile.nodes.map(node => {
+            <li key={node.childImageSharp.id}>
+              <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt={node.name}/>
+              {node.base}
+
+            </li>
+          })
+}
+      </ul>
+
 
 
     </Layout>
@@ -80,6 +99,25 @@ const IndexPage = () => {
 )
 }
 
+export const imagesTeam = graphql`
+query {
+ allFile {
+    nodes {
+      dir
+      name
+      base
+      childImageSharp {
+        id
+        gatsbyImageData
+      
+      }
+    }
+  }
+
+}
+
+
+`
 
 
 
