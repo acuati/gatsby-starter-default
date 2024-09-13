@@ -10,12 +10,12 @@ const IndexPage = ({data}) => {
   return(
     <>
     <Layout>
+{/* 
+       <div className='container-team-card'>
 
-       {/* <div className='container-team-card'> */}
 
 
-
-     {/* <TeamCard
+      <TeamCard
       imageSrc="https://via.placeholder.com/150"
       title="Alberto Alcocer"
       role="Jefe de equipo"
@@ -76,9 +76,9 @@ const IndexPage = ({data}) => {
 
 
 
-     </TeamCard> */}
-     {/* </div> */}
-
+     </TeamCard> 
+      </div>  */}
+{/* 
       <ul>
         {
           data.allFile.nodes.map(node => {
@@ -89,7 +89,7 @@ const IndexPage = ({data}) => {
             </li>
           })
 }
-      </ul>
+      </ul> */}
 
 
 
