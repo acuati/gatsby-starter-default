@@ -14,10 +14,10 @@ const Consejo =()=>{
                     <h2>{item.nombre}</h2>
                     <h3>Cargo: {item.cargo}</h3>
                     <figure>
-                        <GatsbyImage
-                        image={item.image}
+                        <img
+                        srce={item.image}
                         alt ={item.nombre}
-                        ></GatsbyImage>
+                        />
                     </figure>
                     <p>{item.descripcion}</p>
                     <a href={item.rrss}>Mi personal Page</a>
