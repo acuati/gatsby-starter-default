@@ -4,7 +4,7 @@ const Step3 = ({ formData, setFormData, prevStep, nextStep }) => {
     return (
         <div>
             <h2>Step 3</h2>
-            <h3>Introducción del color</h3>
+            <h3>Introducción el color</h3>
             <label>Color:</label>
             <input
                 type="color"

@@ -7,10 +7,12 @@ test("muestra un saludo con el nombre correcto", () => {
   const { getByText } = render(<Greeting name="Abdel" />);
   expect(getByText("Hello, Abdel!")).toBeInTheDocument();
 });
-
-test("muestra un saludo sin poner ningún parámetro", () => {
-  const {getByText}=  render(<Greeting />)
-  expect(getByText("Hello, Invitado!")).toBeInTheDocument()
+test('muestra un saludo sin poner ningún parámetro',
+()=>{
+  const {getByText}=render(<Greeting />)
+  expect(getByText("Hello, Invitado!") ).toBeInTheDocument()
 }
 
 );
+
+

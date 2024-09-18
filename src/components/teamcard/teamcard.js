@@ -1,9 +1,11 @@
+// src/components/Card.js
 import React from 'react';
 import './teamcard.css'
-import github from'./github.svg'
-import linkedin from'./linkedin.svg'
+import github from './github.svg'
+import linkedin from './linkedin.svg'
 
-const TeamCard = ({ imageSrc, title, role, description }) => {
+const TeamCard = ({ imageSrc, title,role, description }) => {
+
   return (
     <div className="card-team" data-testid="card-team">
       <img src={imageSrc} alt={title} className="card-team-image" />

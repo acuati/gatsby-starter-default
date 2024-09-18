@@ -1,18 +1,7 @@
 .container-team-card{
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
 }
 
-
-
-
-.card-team{
-    border: 1px solid red;
-    max-width: 250px;
-    padding: 0.5em;
-}
-.card-team-image{
-    width: 100%;
-}

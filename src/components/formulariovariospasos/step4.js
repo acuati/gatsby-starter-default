@@ -7,7 +7,7 @@ const Step4 = ({ formData, prevStep, submitForm }) => {
             <h3>Revisión y confirmación de los datos</h3>
             <ul>
                 <li><strong>Data:</strong> {formData.data}</li>
-                <li><strong>Tamaño:</strong> {formData.size}</li>
+                <li><strong>Size:</strong> {formData.size}</li>
                 <li><strong>Color:</strong> {formData.color}</li>
             </ul>
             <button onClick={prevStep}>Back</button>

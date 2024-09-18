@@ -4,11 +4,11 @@ import Step2 from './step2';
 import Step3 from './step3';
 import Step4 from './step4';
 
-const FormularioVariosPasos = () => {
+const FormularioVariosPasos= () => {
     const [step, setStep] = useState(1);
     const [formData, setFormData] = useState({
         data: '',
-        size: '',
+        size : '',
         color: ''
     });
 

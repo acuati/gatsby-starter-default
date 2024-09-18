@@ -1,12 +1,12 @@
 .tndm-btn-primary {
     background-color: blue;
 }
-.tndm-btn-sucess {
+.tndm-btn-success {
     background-color: green;
 }
 .tndm-btn-warning {
     background-color: rgb(243, 243, 3);
 }
-/* .tndm-btn-danger {
-    background-color: rgb();
-} */
+.tndm-btn-danger {
+    background-color: rgb(255, 1, 1);
+}

@@ -1,25 +1,24 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import './layout.css'
+import Navbar from "../navbar/navbar"
+import "./layout.css"
 const Layout=({children})=>{
+
     return(
         <>
-        
-        <header>
-       
+        <Navbar></Navbar>
+        <header className='header'>
             <StaticImage 
-            src='../images/patrimonio.jpg'
-            // src='../../images/patrimonio.jpg'
+            src='../../images/patrimonio.jpg'
             alt='Logotipo de Patrimonio Nacional'
             width={300}
             height={100}
-            placeholder="blurried"
+            placeholder="blurred"
             layout='constrained'
             className='logotipo'
-            />
-            <p>Esto es el header</p>
+             />
+            <h1>Esto es el header</h1>
         </header>
-        
         <div>
          {children}
         </div>

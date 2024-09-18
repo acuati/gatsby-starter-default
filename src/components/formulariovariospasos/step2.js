@@ -4,8 +4,8 @@ const Step2 = ({ formData, setFormData, prevStep, nextStep }) => {
     return (
         <div>
             <h2>Step 2</h2>
-            <h3>Introducción del tamaño</h3>
-            <label>Tamaño:</label>
+            <h3>Introducción tamaño</h3>
+            <label>tamaño:</label>
             <input
                 type="number"
                 value={formData.size}

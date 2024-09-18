@@ -1,7 +1,7 @@
 import React from "react";
 import domingo from "../images/DomingoMartinez.jpg"
 import data from "../data/data.json"
-import { GatsbyImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 const Consejo =()=>{
     console.log(data)
     return(
@@ -15,17 +15,24 @@ const Consejo =()=>{
                     <h3>Cargo: {item.cargo}</h3>
                     <figure>
                         <img
-                        srce={item.image}
+                        src={item.image}
                         alt ={item.nombre}
                         />
                     </figure>
                     <p>{item.descripcion}</p>
                     <a href={item.rrss}>Mi personal Page</a>
+        
                 </div>
+
+
                 )
+
+
             )}
+        
         </div>
         </>
+
     )
 }
 export default Consejo
